@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::placeholder, *::after, *::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url("../fonts/IRANSans/IRANSans-Light.eot");
+  src: url("../fonts/IRANSans/IRANSans-Light.ttf");
+  src: url("../fonts/IRANSans/IRANSans-Light.woff");
+  src: url("../fonts/IRANSans/IRANSans-Light.woff2");
+}
+
+@font-face {
+  font-family: IRANSans-Medium;
+  src: url("../fonts/IRANSans/IRANSansWeb-Medium.eot");
+  src: url("../fonts/IRANSans/IRANSansWeb-Medium.ttf");
+  src: url("../fonts/IRANSans/IRANSansWeb-Medium.woff");
+  src: url("../fonts/IRANSans/IRANSansWeb-Medium.woff2");
+}
+
+@font-face {
+  font-family: IRANSans-Bold;
+  src: url("../fonts/IRANSans/IRANSansWeb-Bold.eot");
+  src: url("../fonts/IRANSans/IRANSansWeb-Bold.ttf");
+  src: url("../fonts/IRANSans/IRANSansWeb-Bold.woff");
+  src: url("../fonts/IRANSans/IRANSansWeb-Bold.woff2");
+}
+
+:root {
+  --font-family: IRANSans;
+  --font-family-medium: IRANSans-Medium;
+  --font-family-bold: IRANSans-Bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
